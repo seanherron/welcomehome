@@ -64,6 +64,9 @@ ul.category-matrix li:hover h2 {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
+#posts div {
+  margin-top: 10px;
+}
 .col-full {
   width: 940px
 		float:left;
