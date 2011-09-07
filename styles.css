@@ -1,6 +1,6 @@
 div#body-container {
   margin: 0 auto;
-  min-width: 660px;
+  min-width: 330px;
 }
 a:hover {
   text-decoration: none;
@@ -28,17 +28,17 @@ ul.category-matrix {
 }
 ul.category-matrix li {
   position: relative;
-  height: 165px;
+  height: 225px;
   float: left;
   display: block;
-  width: 330px;
+  width: 450px;
   display: none;
   list-style: none;
   background: #ededed;
 }
 ul.category-matrix li img {
-  width: 330px;
-  height: 165px;
+  width: 450px;
+  height: 225px;
 }
 ul.category-matrix li h2 {
   display: block;
@@ -49,7 +49,7 @@ ul.category-matrix li h2 {
   font-size: 0.9em;
   height: 20px;
   line-height: 20px;
-  width: 320px;
+  width: 440px;
   text-align: right;
   padding-right: 10px;
   color: rgba(255, 255, 255, 0.4);
@@ -64,24 +64,18 @@ ul.category-matrix li:hover h2 {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
+#posts {
+  margin: auto;
+}
 #posts div {
   margin-top: 10px;
 }
-.col-full {
-  width: 940px
-		float:left;
+.item {
+  width: 330px;
   margin-left: 10px;
   margin-right: 10px;
+  border-top: 5px solid #ededed;
 }
-.col-half {
-  width: 460px;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.col-quart {
-  width: 220px;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+.item header {
+  margin-top: 5px;
 }

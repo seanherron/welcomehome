@@ -4,12 +4,12 @@
 @secondarybg: #EDEDED;
 
 //Dimensional Settings
-@catwidth:330px;
+@catwidth:450px;
 
 //Global Styles
 div#body-container{
 	margin: 0 auto;
-	min-width:660px;
+	min-width:330px;
 }
 
 a:hover {
@@ -87,28 +87,18 @@ ul.category-matrix {
 
 //Expedition Page Styling
 // 
-#posts div {
+#posts {margin:auto;
+ 	div {
 	margin-top: 10px;
+	}
 }
 	//Columns
-	.col-full {
-		width:940px
-		float:left;
+.item {width:330px;
 		margin-left:10px;
 		margin-right:10px;
-	}
-	
-	.col-half {
-		width:460px;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-	}
-	
-	.col-quart {
-		width:220px;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-	}
+		border-top:5px solid @secondarybg;
+		header {
+			margin-top:5px;
+		}
+		}
 	
