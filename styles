@@ -1,21 +1,18 @@
-//Color Settings
 @textbackground: #000;
 @cattitle: #fff;
 @secondarybg: #EDEDED;
 
-//Dimensional Settings
 @catwidth:330px;
 
-//Global Styles
 div#body-container{
-	margin: 0 auto;
-	min-width:660px;
+	margin:auto;
+	width:990px;
 }
 
 a:hover {
 	text-decoration:none;
 }
-//Header Styles
+
 header {
 	height:50px;
 	margin-top:25px;
@@ -35,14 +32,13 @@ header {
 	}
 }
 
-//Homepage Styling
 ul.category-matrix {
 	margin:auto;
 	min-height:500px;
 
 	li {
 		position:relative;
-		height:@catwidth / 2;
+		height:125px;
 		float:left;
 		display:block;
 		width:@catwidth;
@@ -52,7 +48,6 @@ ul.category-matrix {
 		
 		img {
 			width:@catwidth;
-			height:@catwidth / 2;
 		}
 			
 		h2 {
@@ -84,27 +79,3 @@ ul.category-matrix {
 		}
 		
 }
-
-//Expedition Page Styling
-	//Columns
-	.col-full {
-		width:940px
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-	}
-	
-	.col-half {
-		width:460px;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-	}
-	
-	.col-quart {
-		width:220px;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-	}
-	

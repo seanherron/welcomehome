@@ -1,12 +1,84 @@
-section.category-matrix article {
-  position: relative;
-  float: left;
-  height: auto;
+div#body-container {
+  margin: 0 auto;
+  min-width: 660px;
 }
-section.category-matrix article header {
+a:hover {
+  text-decoration: none;
+}
+header {
+  height: 50px;
+  margin-top: 25px;
+}
+header h1 {
+  font-family: 'Loved by the King', cursive;
+  margin-bottom: 0;
+  float: left;
+  font-size: 3em;
+  line-height: 50px;
+  padding-left: 5px;
+}
+header p {
+  float: right;
+  line-height: 50px;
+  font-style: italic;
+}
+ul.category-matrix {
+  margin: auto;
+  min-height: 500px;
+}
+ul.category-matrix li {
+  position: relative;
+  height: 165px;
+  float: left;
+  display: block;
+  width: 330px;
+  display: none;
+  list-style: none;
+  background: #ededed;
+}
+ul.category-matrix li img {
+  width: 330px;
+  height: 165px;
+}
+ul.category-matrix li h2 {
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  right: 0;
+  bottom: 0;
+  font-size: 0.9em;
+  height: 20px;
+  line-height: 20px;
+  width: 320px;
+  text-align: right;
+  padding-right: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+ul.category-matrix li p {
+  color: #212121;
+  padding: 10px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+ul.category-matrix li:hover h2 {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.col-full {
+  width: 940px
+		float:left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.col-half {
+  width: 460px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.col-quart {
+  width: 220px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
 }
