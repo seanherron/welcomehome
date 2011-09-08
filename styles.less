@@ -132,7 +132,7 @@ td { vertical-align: top; }
 @secondarybg: #EDEDED;
 
 //Dimensional Settings
-@catwidth:30%;
+@catwidth:33.3%;
 @radius:5px;
 @containerwidth:90%;
 @marginwidth:5%;
@@ -150,13 +150,14 @@ body {
 }
 
 section#content{
-	margin-right:@marginwidth;
-	margin-left:@marginwidth;
-	width:@containerwidth;
+
 }
 
-a:hover {
+a	{
 	text-decoration:none;
+:hover {
+	text-decoration:none;
+}
 }
 
 video {
@@ -166,12 +167,11 @@ video {
 
 //Header Styles
 header#title {
-	height:50px;
-	width:@containerwidth;
-	margin-right:@marginwidth;
-	margin-left:@marginwidth;
+	height:80px;
+	width:100%;
 	margin-top:20px;
 	min-width:705px;
+	background:blue;
 
 	h1 {
 		font-family: 'Loved by the King', cursive;
@@ -221,11 +221,7 @@ footer#base {
 
 //Homepage Styling
 ul.category-matrix {
-	margin:auto;
-	margin-left:5%;
-	margin-right:5%;
 	min-height:500px;
-	width:100%;
 
 	li {
 		position:relative;
@@ -234,7 +230,6 @@ ul.category-matrix {
 		width:@catwidth;
 		display:none;
 		list-style:none;
-		margin-bottom:-5px;
 		
 		img {
 			width:100%;
@@ -245,15 +240,13 @@ ul.category-matrix {
 			background:fadeout(@textbackground, 40%);
 			position:absolute;
 			right:0;
-			bottom:5px;
+			bottom:0px;
 			height:20px;
 			width:100%;
 			text-align:right;
 		
 			h2 {
 			font-size:0.9em;	
-			line-height:20px;
-			padding-right:10px;
 			color:fadeout(@cattitle, 60%);
 			}
 		}
