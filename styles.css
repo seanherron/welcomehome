@@ -352,18 +352,16 @@ video {
   height: auto   !important;
 }
 header#title {
-  height: 80px;
+  height: 75px;
   width: 100%;
   margin-top: 20px;
   min-width: 705px;
-  background: blue;
 }
 header#title h1 {
   font-family: 'Loved by the King', cursive;
   margin-bottom: 0;
   float: left;
   font-size: 3em;
-  line-height: 50px;
   padding-left: 5px;
 }
 header#title h1 a {
@@ -374,8 +372,12 @@ header#title h1 a :hover {
 }
 header#title p {
   float: right;
-  line-height: 50px;
+  line-height: 75px;
   font-style: italic;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 10px;
   padding-right: 5px;
 }
 footer#base {
@@ -395,6 +397,9 @@ footer#base a {
 }
 ul.category-matrix {
   min-height: 500px;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 ul.category-matrix li {
   position: relative;
@@ -408,18 +413,27 @@ ul.category-matrix li img {
   width: 100%;
   height: auto;
 }
-ul.category-matrix li header {
+ul.category-matrix li a {
+  display: block;
+}
+ul.category-matrix li div.heading {
+  display: block;
+  background: black;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  right: 0;
-  bottom: 0px;
   height: 20px;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  text-align: right;
 }
-ul.category-matrix li header h2 {
+ul.category-matrix li div.heading h2 {
   font-size: 0.9em;
-  color: rgba(255, 255, 255, 0.4);
+  color: #808080;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  padding-right: 5px;
 }
 ul.category-matrix li p {
   color: #212121;
@@ -427,25 +441,23 @@ ul.category-matrix li p {
   font-size: 1.5em;
   line-height: 1.5em;
 }
-ul.category-matrix li:hover h2 {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  -webkit-transition: background 0.5s linear;
-  -moz-transition: background 0.5s linear;
-  -o-transition: background 0.5s linear;
-  transition: background 0.5s linear;
-}
-ul.category-matrix li:hover header {
+ul.category-matrix li:hover div.heading {
   background: rgba(0, 0, 0, 0.9);
   -webkit-transition: background 0.5s linear;
   -moz-transition: background 0.5s linear;
   -o-transition: background 0.5s linear;
   transition: background 0.5s linear;
 }
+ul.category-matrix li:hover div.heading h2 {
+  color: #ffffff;
+  -webkit-transition: color 0.5s linear;
+  -moz-transition: color 0.5s linear;
+  -o-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
 header.expedition {
-  width: 87%;
-  margin-right: 5.5%;
-  margin-left: 5.5%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
   background: #ededed;
   padding: 1%;
   font-size: 1.2em;
@@ -460,7 +472,7 @@ header.expedition img {
 }
 section#content article.post {
   background: #ededed;
-  float: right;
+  float: left;
   width: 30%;
   margin-right: 0.5%;
   margin-left: 0.5%;
