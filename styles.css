@@ -1,18 +1,23 @@
+body {
+  background: #fcfcfc;
+}
 div#body-container {
-  margin: auto;
-  min-width: 330px;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
 }
 a:hover {
   text-decoration: none;
 }
-header {
+header#title {
   height: 50px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  float: left;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 20px;
+  min-width: 705px;
 }
-header h1 {
+header#title h1 {
   font-family: 'Loved by the King', cursive;
   margin-bottom: 0;
   float: left;
@@ -20,40 +25,65 @@ header h1 {
   line-height: 50px;
   padding-left: 5px;
 }
-header p {
+header#title h1 a {
+  color: black;
+}
+header#title h1 a :hover {
+  color: black;
+}
+header#title p {
   float: right;
   line-height: 50px;
   font-style: italic;
+  padding-right: 5px;
+}
+footer {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+footer p.meta {
+  float: left;
+}
+footer p.credit {
+  margin-top: 10px;
+  float: right;
+}
+footer a {
+  color: #343434;
 }
 ul.category-matrix {
   margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
   min-height: 500px;
+  width: 100%;
 }
 ul.category-matrix li {
   position: relative;
-  height: 200px;
   float: left;
   display: block;
-  width: 400px;
+  width: 30%;
   display: none;
   list-style: none;
-  background: #ededed;
+  margin-bottom: -5px;
 }
 ul.category-matrix li img {
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
-ul.category-matrix li h2 {
-  display: block;
+ul.category-matrix li header {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   right: 0;
-  bottom: 0;
-  font-size: 0.9em;
+  bottom: 5px;
   height: 20px;
-  line-height: 20px;
-  width: 390px;
+  width: 100%;
   text-align: right;
+}
+ul.category-matrix li header h2 {
+  font-size: 0.9em;
+  line-height: 20px;
   padding-right: 10px;
   color: rgba(255, 255, 255, 0.4);
 }
@@ -66,19 +96,21 @@ ul.category-matrix li p {
 ul.category-matrix li:hover h2 {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+}
+ul.category-matrix li:hover header {
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 #posts {
-  margin: auto;
+  margin: 0 auto;
 }
-#posts div {
-  margin-top: 10px;
-}
-.item {
-  width: 330px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-top: 5px solid #ededed;
-}
-.item header {
-  margin-top: 5px;
+#posts article {
+  float: left;
 }

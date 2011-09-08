@@ -1,28 +1,38 @@
 //Color Settings
 @textbackground: #000;
 @cattitle: #fff;
+@bodybg:#FCFCFC;
 @secondarybg: #EDEDED;
 
 //Dimensional Settings
-@catwidth:400px;
+@catwidth:30%;
 @radius:5px;
+@containerwidth:90%;
+@marginwidth:5%;
 
 //Global Styles
+// 
+body {
+	background:@bodybg;
+}
 div#body-container{
-	margin:auto;
-	min-width:330px;
+	margin-right:@marginwidth;
+	margin-left:@marginwidth;
+	width:@containerwidth;
 }
 
 a:hover {
 	text-decoration:none;
 }
+
 //Header Styles
-header {
+header#title {
 	height:50px;
-	top:0;
-	left:0;
-	width:100%;
-	float:left;
+	width:@containerwidth;
+	margin-right:@marginwidth;
+	margin-left:@marginwidth;
+	margin-top:20px;
+	min-width:705px;
 
 	h1 {
 		font-family: 'Loved by the King', cursive;
@@ -31,50 +41,83 @@ header {
 		font-size:3em;
 		line-height:50px;
 		padding-left:5px;
+		
+		a {
+			color:black;
+			
+			:hover {
+				color:black;
+			}
+		}
 		}
 
 	p {
 		float:right;
 		line-height:50px;
 		font-style:italic;
+		padding-right:5px;
 	}
 }
 
+//Footer Styles
+footer {
+	width:@containerwidth;
+	margin-right:@marginwidth;
+	margin-left:@marginwidth;
+	
+	p.meta {
+		float:left
+	}
+	
+	p.credit {
+		margin-top:10px;
+		float:right;
+	}
+	
+	a {
+		color:darken(#808080, 30%);
+	}
+	
+}
 
 //Homepage Styling
 ul.category-matrix {
 	margin:auto;
+	margin-left:5%;
+	margin-right:5%;
 	min-height:500px;
+	width:100%;
 
 	li {
 		position:relative;
-		height:@catwidth / 2;
 		float:left;
 		display:block;
 		width:@catwidth;
 		display:none;
 		list-style:none;
-		background:@secondarybg;
+		margin-bottom:-5px;
 		
 		img {
-			width:@catwidth;
-			height:@catwidth / 2;
+			width:100%;
+			height:auto;
 		}
-			
-		h2 {
-			display:block;
+		
+		header {
 			background:fadeout(@textbackground, 40%);
 			position:absolute;
 			right:0;
-			bottom:0;
-			font-size:0.9em;
+			bottom:5px;
 			height:20px;
-			line-height:20px;
-			width:@catwidth - 10;
+			width:100%;
 			text-align:right;
+		
+			h2 {
+			font-size:0.9em;	
+			line-height:20px;
 			padding-right:10px;
 			color:fadeout(@cattitle, 60%);
 			}
+		}
 		
 		p {
 			color:darken(@secondarybg, 80%);
@@ -84,27 +127,34 @@ ul.category-matrix {
 		}
 		}
 		
-		li:hover h2 {
+		li:hover {
+			
+			h2 {
 			color:fadeout(@cattitle, 20%);
 			text-decoration:none;
+			-webkit-transition: background 0.5s linear;
+			-moz-transition: background 0.5s linear;
+			-o-transition: background 0.5s linear;
+			transition: background 0.5s linear;
+			}
+			
+			header {
+				background:fadeout(@textbackground, 10%);
+				-webkit-transition: background 0.5s linear;
+				-moz-transition: background 0.5s linear;
+				-o-transition: background 0.5s linear;
+				transition: background 0.5s linear;
+
+			}
 		}
 		
 }
-
-//Expedition Page Styling
-// 
-#posts {margin:auto;
- 	div {
-	margin-top: 10px;
-	}
-}
-	//Columns
-.item  {width:330px;
-		margin-left:10px;
-		margin-right:10px;
-		border-top:5px solid @secondarybg;
-		header {
-			margin-top:5px;
-		}
-		}
 	
+//Post Display
+#posts {
+	margin: 0 auto;
+	article {
+		float:left;
+	}
+	
+}
