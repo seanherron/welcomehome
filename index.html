@@ -27,13 +27,12 @@
   <body>
 	
 <div id="body-container">
-	
-	<header class="clearfix">
+	<header id="title" class="clearfix">
 		<h1>Welcome Home</h1>
 		<p>A collection of memories and thoughts on crews from the International Space Station</p>
 	</header>
 <ul class="category-matrix clearfix">
-
+	
 <li><a href="#">
 <h2>Expedition 28</h2>
 <img src="img/mission-thumbs/e28.png" alt="Expedition 28" />
@@ -199,6 +198,7 @@
 	    $tumblelog.imagesLoaded( function(){
 	      $tumblelog.masonry({
 			isAnimated: true,
+			cornerStampSelector: '#title',
 			isFitWidth: true
 	      });
 	    });

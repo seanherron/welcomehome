@@ -1,5 +1,5 @@
 div#body-container {
-  margin: 0 auto;
+  margin: auto;
   min-width: 330px;
 }
 a:hover {
@@ -7,7 +7,10 @@ a:hover {
 }
 header {
   height: 50px;
-  margin-top: 25px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  float: left;
 }
 header h1 {
   font-family: 'Loved by the King', cursive;
@@ -28,17 +31,17 @@ ul.category-matrix {
 }
 ul.category-matrix li {
   position: relative;
-  height: 175px;
+  height: 200px;
   float: left;
   display: block;
-  width: 350px;
+  width: 400px;
   display: none;
   list-style: none;
   background: #ededed;
 }
 ul.category-matrix li img {
-  width: 350px;
-  height: 175px;
+  width: 400px;
+  height: 200px;
 }
 ul.category-matrix li h2 {
   display: block;
@@ -49,7 +52,7 @@ ul.category-matrix li h2 {
   font-size: 0.9em;
   height: 20px;
   line-height: 20px;
-  width: 340px;
+  width: 390px;
   text-align: right;
   padding-right: 10px;
   color: rgba(255, 255, 255, 0.4);
