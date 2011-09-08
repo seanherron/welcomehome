@@ -14,8 +14,15 @@
 // 
 body {
 	background:@bodybg;
+	overflow-x:hidden;
 }
-div#body-container{
+#body-container{
+	margin-right:@marginwidth;
+	margin-left:@marginwidth;
+	width:@containerwidth;
+}
+
+section#content{
 	margin-right:@marginwidth;
 	margin-left:@marginwidth;
 	width:@containerwidth;
@@ -23,6 +30,11 @@ div#body-container{
 
 a:hover {
 	text-decoration:none;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 //Header Styles
@@ -60,7 +72,7 @@ header#title {
 }
 
 //Footer Styles
-footer {
+footer#base {
 	width:@containerwidth;
 	margin-right:@marginwidth;
 	margin-left:@marginwidth;
@@ -151,10 +163,48 @@ ul.category-matrix {
 }
 	
 //Post Display
-#posts {
-	margin: 0 auto;
-	article {
-		float:left;
+// 
+header.expedition {
+	width:@containerwidth - 3;
+	margin-right:@marginwidth + 0.5;
+	margin-left:@marginwidth + 0.5;
+	background:@secondarybg;
+	padding:1%;
+	font-size:1.2em;
+	position:relative;
+		date {
+		}
+		img {
+			height:60px;
+			width:auto;
+			position:absolute;
+			right:0;
+			top:15px;
+		}
+}
+section#content {
+	article.post {
+		background:@secondarybg;
+		float:right;
+		width:30%;
+		margin-right:0.5%;
+		margin-left:0.5%;
+		padding:1.20%;
+		margin-top:15px;
+		
+			header {
+				border-bottom: 1px solid darken(#eeeeee, 10%);
+				
+				date {
+					text-transform: uppercase;
+					font-size:0.7em;
+				}
+			}
+			
+			img {
+				width:100%;
+				height:auto;
+			}
 	}
 	
 }

@@ -1,13 +1,23 @@
 body {
   background: #fcfcfc;
+  overflow-x: hidden;
 }
-div#body-container {
+#body-container {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+}
+section#content {
   margin-right: 5%;
   margin-left: 5%;
   width: 90%;
 }
 a:hover {
   text-decoration: none;
+}
+video {
+  width: 100%    !important;
+  height: auto   !important;
 }
 header#title {
   height: 50px;
@@ -37,19 +47,19 @@ header#title p {
   font-style: italic;
   padding-right: 5px;
 }
-footer {
+footer#base {
   width: 90%;
   margin-right: 5%;
   margin-left: 5%;
 }
-footer p.meta {
+footer#base p.meta {
   float: left;
 }
-footer p.credit {
+footer#base p.credit {
   margin-top: 10px;
   float: right;
 }
-footer a {
+footer#base a {
   color: #343434;
 }
 ul.category-matrix {
@@ -108,9 +118,39 @@ ul.category-matrix li:hover header {
   -o-transition: background 0.5s linear;
   transition: background 0.5s linear;
 }
-#posts {
-  margin: 0 auto;
+header.expedition {
+  width: 87%;
+  margin-right: 5.5%;
+  margin-left: 5.5%;
+  background: #ededed;
+  padding: 1%;
+  font-size: 1.2em;
+  position: relative;
 }
-#posts article {
-  float: left;
+header.expedition img {
+  height: 60px;
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+section#content article.post {
+  background: #ededed;
+  float: right;
+  width: 30%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  padding: 1.20%;
+  margin-top: 15px;
+}
+section#content article.post header {
+  border-bottom: 1px solid #d5d5d5;
+}
+section#content article.post header date {
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+section#content article.post img {
+  width: 100%;
+  height: auto;
 }
