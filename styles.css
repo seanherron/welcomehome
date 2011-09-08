@@ -341,12 +341,10 @@ body {
   margin-left: 5%;
   width: 90%;
 }
-section#content {
-  margin-right: 5%;
-  margin-left: 5%;
-  width: 90%;
+a {
+  text-decoration: none;
 }
-a:hover {
+a :hover {
   text-decoration: none;
 }
 video {
@@ -354,12 +352,11 @@ video {
   height: auto   !important;
 }
 header#title {
-  height: 50px;
-  width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
+  height: 80px;
+  width: 100%;
   margin-top: 20px;
   min-width: 705px;
+  background: blue;
 }
 header#title h1 {
   font-family: 'Loved by the King', cursive;
@@ -397,20 +394,15 @@ footer#base a {
   color: #343434;
 }
 ul.category-matrix {
-  margin: auto;
-  margin-left: 5%;
-  margin-right: 5%;
   min-height: 500px;
-  width: 100%;
 }
 ul.category-matrix li {
   position: relative;
   float: left;
   display: block;
-  width: 30%;
+  width: 33.3%;
   display: none;
   list-style: none;
-  margin-bottom: -5px;
 }
 ul.category-matrix li img {
   width: 100%;
@@ -420,15 +412,13 @@ ul.category-matrix li header {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   right: 0;
-  bottom: 5px;
+  bottom: 0px;
   height: 20px;
   width: 100%;
   text-align: right;
 }
 ul.category-matrix li header h2 {
   font-size: 0.9em;
-  line-height: 20px;
-  padding-right: 10px;
   color: rgba(255, 255, 255, 0.4);
 }
 ul.category-matrix li p {
