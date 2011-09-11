@@ -13,7 +13,7 @@
 	
 	 <!-- Le styles -->
 			<!--[if ! lte IE 6]><!-->
-				<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css">
+				<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/styles.css">
 				<link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
 			<!--<![endif]-->
 		<!--[if lte IE 6]>
@@ -35,47 +35,8 @@
 
 <body <?php $page_slug = $post->post_name; body_class($page_slug); ?>>
 
-	<?php roots_wrap_before(); ?>
-	<div id="wrap" class="container" role="document">
-	<?php roots_header_before(); ?>
-		<header id="banner" class="<?php global $roots_options; echo $roots_options['container_class']; ?>" role="banner">
-			<?php roots_header_inside(); ?>
-			<div class="container">
-	
-				<a id="logo" href="<?php echo home_url(); ?>/">
-					<img src="<?php echo get_header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php bloginfo('name'); ?>">
-				</a>
-				
-				<?php if ($roots_options['clean_menu']) { ?>
-					<nav id="nav-main" role="navigation">
-						<?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new roots_nav_walker())); ?>
-					</nav>
-					<?php 					
-						$utility_nav = wp_get_nav_menu_object('Utility Navigation');
-						$utility_nav_term_id = (int) $utility_nav->term_id;
-						$menu_items = wp_get_nav_menu_items($utility_nav_term_id);					
-						if ($menu_items || !empty($menu_items)) {
-					?>
-					<nav id="nav-utility">
-						<?php wp_nav_menu(array('theme_location' => 'utility_navigation', 'walker' => new roots_nav_walker())); ?>
-					</nav>
-					<?php } ?>		
-				<?php } else { ?>
-					<nav id="nav-main" role="navigation">
-						<?php wp_nav_menu(array('theme_location' => 'primary_navigation')); ?>
-					</nav>
-					<?php 					
-						$utility_nav = wp_get_nav_menu_object('Utility Navigation');
-						$utility_nav_term_id = (int) $utility_nav->term_id;
-						$menu_items = wp_get_nav_menu_items($utility_nav_term_id);					
-						if ($menu_items || !empty($menu_items)) {
-					?>
-					<nav id="nav-utility">
-						<?php wp_nav_menu(array('theme_location' => 'utility_navigation')); ?>
-					</nav>
-					<?php } ?>								
-				<?php } ?>
-			
-			</div>
+	<div id="body-container" class="clearfix">
+		<header id="title" class="clearfix">
+			<h1><a href="/">Welcome Home</a></h1>
+			<p>A collection of memories and thoughts on crews from the International Space Station</p>
 		</header>
-	<?php roots_header_after(); ?>
