@@ -1,21 +1,23 @@
-	<?php roots_footer_before(); ?>
-		<footer id="content-info" class="<?php global $roots_options; echo $roots_options['container_class']; ?>" role="contentinfo">
-			<?php roots_footer_inside(); ?>
-			<div class="container">
-				<?php dynamic_sidebar("Footer"); ?>
-				<p class="copy"><small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></small></p>
-			</div>	
-		</footer>
-		<?php roots_footer_after(); ?>	
-	</div><!-- /#wrap -->
+  <footer id="base">
+    <p class="meta">Site Editor: <a href="mailto:sean.herron@nasa.gov">Sean Herron</a><br />
+	NASA Official: <a href="mailto:nicholas.g.skytland@nasa.gov">Nick Skytland</a><br />
+	<a href="http://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy Policy and Important Notices</a></p>
+	<p class="credit"><a href="http://open.nasa.gov">A NASA Open Government Initiative Website</a></p>
+  </footer>
+
+</div> <!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script> 
+<script src="js/jquery.masonry.min.js"></script> 
+<script>
+$(document).ready(function() {
+$("li").each(function(index) {
+    $(this).delay(10*index).fadeIn(900);
+});
+});
+</script>
 
 <?php wp_footer(); ?>
 <?php roots_footer(); ?>
-
-	<!--[if lt IE 7]>
-		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-	<![endif]-->
 
 </body>
 </html>
