@@ -384,14 +384,10 @@ footer#base {
   position: relative;
 }
 footer#base p.meta {
-  position: absolute;
-  left: 0
-		top:0;
+  float: left;
 }
 footer#base p.credit {
-  position: absolute;
-  right: 0;
-  top: 10px;
+  float: right;
 }
 footer#base a {
   color: #343434;
