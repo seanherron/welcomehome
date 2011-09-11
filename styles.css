@@ -456,7 +456,7 @@ ul.astronauts {
   margin: 0;
 }
 ul.astronauts li {
-  display: inline-block;
+  display: inline;
 }
 ul.astronauts li a {
   display: inline-block;
