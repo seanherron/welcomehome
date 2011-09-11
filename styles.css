@@ -362,7 +362,6 @@ header#title h1 {
   margin-bottom: 0;
   float: left;
   font-size: 3em;
-  padding-left: 5px;
 }
 header#title h1 a {
   color: black;
@@ -475,8 +474,6 @@ ul.astronauts li a img:hover {
   transition: opacity 0.2s linear;
 }
 header.expedition {
-  margin-right: 0.5%;
-  margin-left: 0.5%;
   background: #ededed;
   padding: 1%;
   font-size: 1.2em;
@@ -496,14 +493,16 @@ header.expedition img.patch {
   right: 0;
   top: 25px;
 }
+section#content {
+  margin-left: -1.5%;
+}
 section#content article.post {
   background: #ededed;
   float: left;
   width: 30%;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-  padding: 1.1%;
   margin-top: 15px;
+  margin-left: 1.5%;
+  padding: 1%;
 }
 section#content article.post header {
   border-bottom: 1px solid #d5d5d5;
