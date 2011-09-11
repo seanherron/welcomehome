@@ -1,16 +1,25 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+	<title><?php bloginfo('name'); ?></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="A collection of memories and thoughts on crews from the International Space Station">
+	    <meta name="author" content="Sean Herron">
 
-	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
 	
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-	<?php roots_stylesheets(); ?>
+	 <!-- Le styles -->
+			<!--[if ! lte IE 6]><!-->
+				<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css">
+				<link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+			<!--<![endif]-->
+		<!--[if lte IE 6]>
+			<link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection">
+		<![endif]-->
+	
 	
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 
