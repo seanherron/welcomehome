@@ -510,7 +510,10 @@ section#content article.post header {
   padding-bottom: 0;
   margin-bottom: 20px;
 }
-section#content article.post header h3 {
+section#content article.post header a {
+  color: #000;
+}
+section#content article.post header a h3 {
   margin-bottom: 5px;
   margin-top: 15px;
 }
