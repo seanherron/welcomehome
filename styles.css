@@ -381,16 +381,17 @@ header#title p {
   padding-right: 5px;
 }
 footer#base {
-  width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
+  position: relative;
 }
 footer#base p.meta {
-  float: left;
+  position: absolute;
+  left: 0
+		top:0;
 }
 footer#base p.credit {
-  margin-top: 10px;
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 10px;
 }
 footer#base a {
   color: #343434;

@@ -203,17 +203,18 @@ header#title {
 
 //Footer Styles
 footer#base {
-	width:@containerwidth;
-	margin-right:@marginwidth;
-	margin-left:@marginwidth;
+	position:relative;
 	
 	p.meta {
-		float:left
+		position:absolute;
+		left:0
+		top:0;
 	}
 	
 	p.credit {
-		margin-top:10px;
-		float:right;
+		position:absolute;
+		right:0;
+		top:10px;
 	}
 	
 	a {
