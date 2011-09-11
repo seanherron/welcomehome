@@ -494,14 +494,15 @@ header.expedition img.patch {
   top: 25px;
 }
 section#content {
-  margin-left: -1.5%;
+  margin-left: -1%;
+  margin-right: -0.5%;
 }
 section#content article.post {
   background: #ededed;
   float: left;
   width: 30%;
   margin-top: 15px;
-  margin-left: 1.5%;
+  margin-left: 1%;
   padding: 1%;
 }
 section#content article.post header {
