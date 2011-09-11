@@ -294,6 +294,39 @@ ul.category-matrix {
 	
 //Post Display
 // 
+
+//Astronaut Pic
+@astropic-dimension:30px;
+ul.astronauts {
+	padding:0;
+	margin:0;
+	
+	li {
+		display:inline-block;
+		
+		a {
+			display:inline-block;
+		
+		img {
+			width:@astropic-dimension;
+			height:@astropic-dimension;
+			opacity:0.5;
+			}
+		img:hover {
+			@astro-hover-transition-speed:0.2s;
+				opacity:1.0;
+				-webkit-transition: opacity @astro-hover-transition-speed linear;
+				-moz-transition: opacity @astro-hover-transition-speed linear;
+				-o-transition: opacity @astro-hover-transition-speed linear;
+				transition: opacity @astro-hover-transition-speed linear;
+				}
+		}
+	}
+}
+
+//Expedition Page Header
+// 
+
 header.expedition {
 	margin-right:0.5%;
 	margin-left:0.5%;
@@ -301,14 +334,20 @@ header.expedition {
 	padding:1%;
 	font-size:1.2em;
 	position:relative;
-		date {
+	
+		h2 {
+			margin-bottom:5px;
 		}
-		img {
+		date {
+			display:block;
+			margin-bottom:10px;
+		}
+		img.patch {
 			height:90px;
 			width:auto;
 			position:absolute;
 			right:0;
-			top:10px;
+			top:25px;
 		}
 }
 section#content {

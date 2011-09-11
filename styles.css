@@ -452,6 +452,28 @@ ul.category-matrix li:hover div.heading h2 {
   -o-transition: color 0.5s linear;
   transition: color 0.5s linear;
 }
+ul.astronauts {
+  padding: 0;
+  margin: 0;
+}
+ul.astronauts li {
+  display: inline-block;
+}
+ul.astronauts li a {
+  display: inline-block;
+}
+ul.astronauts li a img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+ul.astronauts li a img:hover {
+  opacity: 1.0;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
 header.expedition {
   margin-right: 0.5%;
   margin-left: 0.5%;
@@ -460,12 +482,19 @@ header.expedition {
   font-size: 1.2em;
   position: relative;
 }
-header.expedition img {
+header.expedition h2 {
+  margin-bottom: 5px;
+}
+header.expedition date {
+  display: block;
+  margin-bottom: 10px;
+}
+header.expedition img.patch {
   height: 90px;
   width: auto;
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 25px;
 }
 section#content article.post {
   background: #ededed;
