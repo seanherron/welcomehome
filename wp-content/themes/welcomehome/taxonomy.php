@@ -1,6 +1,18 @@
 <?php get_header(); ?>
 	<?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
-	
+					<header class="expedition clearfix">
+						<h2><?php echo $term->name; ?></h2>
+						<img class="patch" src="<?php echo xydac_cloud('expedition',$term->slug,'patch'); ?>" alt="Expedition 28 Patch" align="right"/>
+						<date><?php echo xydac_cloud('expedition',$term->slug,'date'); ?></date>
+						<ul class="astronauts">
+							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							</ul>
+						</header>
 					<?php roots_loop_before(); ?>
 					<section id="content" class="clearfix">
 					<?php get_template_part('loop', 'taxonomy'); ?>
@@ -11,6 +23,7 @@
 						var $container = $('#content');
 
 						$(window).resize(function(){
+						$container.imagesLoaded( function(){
 						  $container.masonry({
 						      itemSelector: '.post',
 						      isResizable: false,
@@ -19,6 +32,7 @@
 						  });
 						// trigger resize to set up masonry on start-up
 						}).resize();
+						});
 					});
 					</script>
 					<script>
