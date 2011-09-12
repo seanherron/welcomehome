@@ -86,7 +86,7 @@ $first_img = $matches [1] [0];
 if(empty($first_img)){ //Varsayılan küçük resim
 }
 else {
-	print '<img src="' . $first_img . '" alt="" />';
+	print '<img src="' . $first_img . '" alt="Image" class="clearfix" />';
 }
 }
 
