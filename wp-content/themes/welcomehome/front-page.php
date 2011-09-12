@@ -4,8 +4,8 @@
 $args=array(
   'orderby' => 'name',
   'taxonomy' => 'expedition',
-  'order' => 'ASC',
-  'hide_empty' => '0'
+  'order' => 'DESC',
+  'hide_empty' => '1'
   );
 $categories=get_categories($args);
   foreach($categories as $category) {
