@@ -13,6 +13,7 @@
 			<date><?php the_time('F jS, Y') ?></date>
 			<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a></header>
 		<?php the_excerpt(); ?>
+		<?php echo catch_that_image() ?>
 	</article>			
 <?php endwhile; // End the loop ?>
 
