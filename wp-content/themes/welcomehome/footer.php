@@ -7,7 +7,7 @@
 
 </div> <!-- /container -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script> 
-<script src="js/jquery.masonry.min.js"></script> 
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.masonry.min.js"></script> 
 <script>
 $(document).ready(function() {
 $("li").each(function(index) {
