@@ -11,7 +11,7 @@ $categories=get_categories($args);
   foreach($categories as $category) {
 $expeditionimage =	xydac_cloud('expedition',$category->slug,'image');
 $output = '
-	<li><a href="' . get_category_link( $category->term_id ) . '">
+	<li><a href="' . get_term_link($category->slug, 'expedition') . '">
 	<div class="heading"><h2>' . $category->name.'</h2></div>
 	<img src="' . $expeditionimage . '" alt="Expedition 28" />
 	</a></li>
