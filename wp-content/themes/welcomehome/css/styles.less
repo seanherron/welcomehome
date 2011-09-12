@@ -411,5 +411,37 @@ section#content {
 				height:auto;
 			}
 	}
+		article.single {
+					width:96.8%;
+					
+					p {
+						clear:both;
+					}
+					h1,h2,h3,h4,h5,h6 {
+						clear:both;
+					}
+					img {
+						width:auto;
+						display:block;
+						margin:auto;
+						padding:20px;
+						clear:both;
+						
+						&.alignleft {
+							float:left;
+							clear:none;
+						}
+						&.alignright {
+							float:right;
+							clear:none;
+						}
+					}
+					
+					section.gallery figure img.attachment-thumbnail {
+						display:inline;
+						margin:none;
+						padding:none;
+					}
+				}
 	
 }

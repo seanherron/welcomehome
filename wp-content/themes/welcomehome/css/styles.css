@@ -82,3 +82,8 @@ header.expedition img.patch{height:90px;width:auto;position:absolute;right:0;top
 section#content{margin-left:-1%;margin-right:-0.5%;}section#content article.post{background:#ededed;float:left;width:30%;margin-top:15px;margin-left:1%;padding:1%;}section#content article.post header{border-bottom:1px solid #d5d5d5;padding-bottom:0;margin-bottom:20px;}section#content article.post header a{color:#000;}section#content article.post header a h3{margin-bottom:5px;margin-top:15px;}
 section#content article.post header date{text-transform:uppercase;font-size:0.7em;}
 section#content article.post img{width:100%;height:auto;}
+section#content article.single{width:96.8%;}section#content article.single p{clear:both;}
+section#content article.single h1,section#content article.single h2,section#content article.single h3,section#content article.single h4,section#content article.single h5,section#content article.single h6{clear:both;}
+section#content article.single img{width:auto;display:block;margin:auto;padding:20px;clear:both;}section#content article.single img.alignleft{float:left;clear:none;}
+section#content article.single img.alignright{float:right;clear:none;}
+section#content article.single section.gallery figure img.attachment-thumbnail{display:inline;margin:none;padding:none;}
