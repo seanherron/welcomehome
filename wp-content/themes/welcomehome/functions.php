@@ -77,12 +77,18 @@ foreach ($sidebars as $sidebar) {
 }
 
 function catch_that_image() {
-  global $post, $posts;
-  $first_img = '';
-  ob_start();
-  ob_end_clean();
-  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-  $first_img = $matches [1] [0];
+global $post, $posts;
+$first_img = '';
+ob_start();
+ob_end_clean();
+$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+$first_img = $matches [1] [0];
+if(empty($first_img)){ //Varsayılan küçük resim
 }
-	return $first_img;
+else {
+	print '<img src="' . $first_img . '" alt="" />';
+}
+}
+
+
 ?>
