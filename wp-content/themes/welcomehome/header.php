@@ -38,5 +38,5 @@
 	<div id="body-container" class="clearfix">
 		<header id="title" class="clearfix">
 			<h1><a href="/">Welcome Home</a></h1>
-			<p>A collection of memories and thoughts on crews from the International Space Station</p>
+			<p>A collection of memories and thoughts for crews from the International Space Station</p>
 		</header>

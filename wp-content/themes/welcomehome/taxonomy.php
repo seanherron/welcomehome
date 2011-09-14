@@ -5,12 +5,12 @@
 						<img class="patch" src="<?php echo xydac_cloud('expedition',$term->slug,'patch'); ?>" alt="Expedition 28 Patch" align="right"/>
 						<date><?php echo xydac_cloud('expedition',$term->slug,'date'); ?></date>
 						<ul class="astronauts">
-							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
-							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
-							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
-							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
-							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
-							<li><a href="#"><img src="img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="http://open.nasa.gov/wp-content/themes/welcomehome/reference/img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="http://open.nasa.gov/wp-content/themes/welcomehome/reference/img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="http://open.nasa.gov/wp-content/themes/welcomehome/reference/img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="http://open.nasa.gov/wp-content/themes/welcomehome/reference/img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="http://open.nasa.gov/wp-content/themes/welcomehome/reference/img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
+							<li><a href="#"><img src="http://open.nasa.gov/wp-content/themes/welcomehome/reference/img/astronauts/ron-garen.jpg" alt="Ron Garen"></a></li>
 							</ul>
 						</header>
 					<?php roots_loop_before(); ?>
